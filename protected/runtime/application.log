@@ -1,0 +1,805 @@
+2012/04/04 16:15:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 16:15:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 16:15:41 [error] [exception.CException] exception 'CException' with message 'Alias "user.UserModule" is invalid. Make sure it points to an existing PHP file.' in /home/veronika/Sites/yummyc.dev/framework/YiiBase.php:318
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/YiiBase.php(198): YiiBase::import('user.UserModule', true)
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CModule.php(283): YiiBase::createComponent('user.UserModule', 'user', NULL, Array)
+#2 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(331): CModule->getModule('user')
+#3 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(270): CWebApplication->createController('user')
+#4 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#5 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#7 {main}
+REQUEST_URI=/user
+---
+2012/04/04 16:15:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 16:15:51 [error] [exception.CException] exception 'CException' with message 'Alias "user.UserModule" is invalid. Make sure it points to an existing PHP file.' in /home/veronika/Sites/yummyc.dev/framework/YiiBase.php:318
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/YiiBase.php(198): YiiBase::import('user.UserModule', true)
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CModule.php(283): YiiBase::createComponent('user.UserModule', 'user', NULL, Array)
+#2 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(331): CModule->getModule('user')
+#3 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(270): CWebApplication->createController('user')
+#4 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#5 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#7 {main}
+REQUEST_URI=/user/
+---
+2012/04/04 16:15:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 16:16:42 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yummyc.{{users}}' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `{{users}}`.
+in /home/veronika/Sites/yummyc.dev/protected/modules/user/controllers/DefaultController.php (18)
+in /home/veronika/Sites/yummyc.dev/index.php (16)
+2012/04/04 16:16:42 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "User" cannot be found in the database.' in /home/veronika/Sites/yummyc.dev/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(User))
+#1 /home/veronika/Sites/yummyc.dev/framework/web/CActiveDataProvider.php(75): CActiveRecord::model('User')
+#2 /home/veronika/Sites/yummyc.dev/protected/modules/user/controllers/DefaultController.php(18): CActiveDataProvider->__construct('User', Array)
+#3 /home/veronika/Sites/yummyc.dev/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#4 /home/veronika/Sites/yummyc.dev/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/veronika/Sites/yummyc.dev/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /home/veronika/Sites/yummyc.dev/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(276): CController->run('')
+#8 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#9 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/user/
+---
+2012/04/04 16:16:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 16:17:18 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yummyc.{{users}}' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `{{users}}`.
+in /home/veronika/Sites/yummyc.dev/protected/modules/user/controllers/DefaultController.php (18)
+in /home/veronika/Sites/yummyc.dev/index.php (16)
+2012/04/04 16:17:18 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "User" cannot be found in the database.' in /home/veronika/Sites/yummyc.dev/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(User))
+#1 /home/veronika/Sites/yummyc.dev/framework/web/CActiveDataProvider.php(75): CActiveRecord::model('User')
+#2 /home/veronika/Sites/yummyc.dev/protected/modules/user/controllers/DefaultController.php(18): CActiveDataProvider->__construct('User', Array)
+#3 /home/veronika/Sites/yummyc.dev/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#4 /home/veronika/Sites/yummyc.dev/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/veronika/Sites/yummyc.dev/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /home/veronika/Sites/yummyc.dev/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(276): CController->run('')
+#8 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#9 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/user/
+---
+2012/04/04 16:17:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 16:18:44 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yummyc.{{users}}' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `{{users}}`.
+in /home/veronika/Sites/yummyc.dev/protected/modules/user/controllers/DefaultController.php (18)
+in /home/veronika/Sites/yummyc.dev/index.php (16)
+2012/04/04 16:18:44 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "User" cannot be found in the database.' in /home/veronika/Sites/yummyc.dev/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(User))
+#1 /home/veronika/Sites/yummyc.dev/framework/web/CActiveDataProvider.php(75): CActiveRecord::model('User')
+#2 /home/veronika/Sites/yummyc.dev/protected/modules/user/controllers/DefaultController.php(18): CActiveDataProvider->__construct('User', Array)
+#3 /home/veronika/Sites/yummyc.dev/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#4 /home/veronika/Sites/yummyc.dev/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /home/veronika/Sites/yummyc.dev/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /home/veronika/Sites/yummyc.dev/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(276): CController->run('')
+#8 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#9 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/user/
+---
+2012/04/04 16:18:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 16:20:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 16:21:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 16:21:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 16:22:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 16:22:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 16:23:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 16:23:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 16:23:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 16:23:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 16:23:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 16:23:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 16:24:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 16:24:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 16:25:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 16:25:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 16:25:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 16:25:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 16:25:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 17:01:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 17:01:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 17:03:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 17:03:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 17:04:04 [error] [exception.CException] exception 'CException' with message 'Alias "gii2.Gii2Module" is invalid. Make sure it points to an existing PHP file.' in /home/veronika/Sites/yummyc.dev/framework/YiiBase.php:318
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/YiiBase.php(198): YiiBase::import('gii2.Gii2Module', true)
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CModule.php(283): YiiBase::createComponent('gii2.Gii2Module', 'gii2', NULL, Array)
+#2 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(331): CModule->getModule('gii2')
+#3 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(270): CWebApplication->createController('gii2')
+#4 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('gii2')
+#5 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#7 {main}
+REQUEST_URI=/gii2
+---
+2012/04/04 17:04:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 17:04:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii2".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('gii2')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii2
+---
+2012/04/04 17:04:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 17:04:17 [error] [exception.CException] exception 'CException' with message 'Alias "gii.GiiModule" is invalid. Make sure it points to an existing PHP file.' in /home/veronika/Sites/yummyc.dev/framework/YiiBase.php:318
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/YiiBase.php(198): YiiBase::import('gii.GiiModule', true)
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CModule.php(283): YiiBase::createComponent('gii.GiiModule', 'gii', NULL, Array)
+#2 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(331): CModule->getModule('gii')
+#3 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(270): CWebApplication->createController('gii')
+#4 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('gii')
+#5 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#7 {main}
+REQUEST_URI=/gii
+---
+2012/04/04 17:04:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 17:05:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 17:05:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 17:06:52 [error] [php] include(BController.php): failed to open stream: No such file or directory (/home/veronika/Sites/yummyc.dev/framework/YiiBase.php:418)
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/protected/components/Controller.php(27): spl_autoload_call()
+#1 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(275): SiteController->init()
+#2 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#3 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/veronika/Sites/yummyc.dev/index.php(16): CWebApplication->run()
+REQUEST_URI=/
+in /home/veronika/Sites/yummyc.dev/protected/components/Controller.php (27)
+in /home/veronika/Sites/yummyc.dev/index.php (16)
+2012/04/04 17:06:55 [error] [php] include(BController.php): failed to open stream: No such file or directory (/home/veronika/Sites/yummyc.dev/framework/YiiBase.php:418)
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/protected/components/Controller.php(27): spl_autoload_call()
+#1 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(275): SiteController->init()
+#2 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#3 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/veronika/Sites/yummyc.dev/index.php(16): CWebApplication->run()
+REQUEST_URI=/
+in /home/veronika/Sites/yummyc.dev/protected/components/Controller.php (27)
+in /home/veronika/Sites/yummyc.dev/index.php (16)
+2012/04/04 17:09:34 [error] [php] include(BController.php): failed to open stream: No such file or directory (/home/veronika/Sites/yummyc.dev/framework/YiiBase.php:418)
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/protected/components/Controller.php(27): spl_autoload_call()
+#1 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(275): SiteController->init()
+#2 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#3 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/veronika/Sites/yummyc.dev/index.php(16): CWebApplication->run()
+REQUEST_URI=/
+in /home/veronika/Sites/yummyc.dev/protected/components/Controller.php (27)
+in /home/veronika/Sites/yummyc.dev/index.php (16)
+2012/04/04 17:09:37 [error] [php] include(BController.php): failed to open stream: No such file or directory (/home/veronika/Sites/yummyc.dev/framework/YiiBase.php:418)
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/protected/components/Controller.php(27): spl_autoload_call()
+#1 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(275): SiteController->init()
+#2 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#3 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/veronika/Sites/yummyc.dev/index.php(16): CWebApplication->run()
+REQUEST_URI=/
+in /home/veronika/Sites/yummyc.dev/protected/components/Controller.php (27)
+in /home/veronika/Sites/yummyc.dev/index.php (16)
+2012/04/04 17:09:57 [error] [php] include(BController.php): failed to open stream: No such file or directory (/home/veronika/Sites/yummyc.dev/framework/YiiBase.php:418)
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/protected/components/Controller.php(27): spl_autoload_call()
+#1 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(275): SiteController->init()
+#2 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#3 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/veronika/Sites/yummyc.dev/index.php(16): CWebApplication->run()
+REQUEST_URI=/
+in /home/veronika/Sites/yummyc.dev/protected/components/Controller.php (27)
+in /home/veronika/Sites/yummyc.dev/index.php (16)
+2012/04/04 17:09:59 [error] [php] include(BController.php): failed to open stream: No such file or directory (/home/veronika/Sites/yummyc.dev/framework/YiiBase.php:418)
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/protected/components/Controller.php(27): spl_autoload_call()
+#1 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(275): SiteController->init()
+#2 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#3 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/veronika/Sites/yummyc.dev/index.php(16): CWebApplication->run()
+REQUEST_URI=/
+in /home/veronika/Sites/yummyc.dev/protected/components/Controller.php (27)
+in /home/veronika/Sites/yummyc.dev/index.php (16)
+2012/04/04 17:10:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/04 17:10:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/04 17:10:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/04 17:10:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/04 17:10:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/04 17:10:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/04 17:10:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/04 17:11:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/04 17:11:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/04 17:11:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/04 17:11:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/04 17:11:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/04 17:12:45 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BootGridView" is invalid. Make sure it points to an existing directory or file.' in /home/veronika/Sites/yummyc.dev/framework/YiiBase.php:343
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 /home/veronika/Sites/yummyc.dev/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(AdminController), 'bootstrap.widge...', Array)
+#2 /home/veronika/Sites/yummyc.dev/framework/web/CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /home/veronika/Sites/yummyc.dev/protected/modules/user/views/admin/index.php(54): CBaseController->widget('bootstrap.widge...', Array)
+#4 /home/veronika/Sites/yummyc.dev/framework/web/CBaseController.php(127): require('/home/veronika/...')
+#5 /home/veronika/Sites/yummyc.dev/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/veronika/...', Array, true)
+#6 /home/veronika/Sites/yummyc.dev/framework/web/CController.php(870): CBaseController->renderFile('/home/veronika/...', Array, true)
+#7 /home/veronika/Sites/yummyc.dev/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /home/veronika/Sites/yummyc.dev/protected/modules/user/controllers/AdminController.php(48): CController->render('index', Array)
+#9 /home/veronika/Sites/yummyc.dev/framework/web/actions/CInlineAction.php(50): AdminController->actionAdmin()
+#10 /home/veronika/Sites/yummyc.dev/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/veronika/Sites/yummyc.dev/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /home/veronika/Sites/yummyc.dev/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/veronika/Sites/yummyc.dev/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /home/veronika/Sites/yummyc.dev/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /home/veronika/Sites/yummyc.dev/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /home/veronika/Sites/yummyc.dev/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/veronika/Sites/yummyc.dev/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(276): CController->run('')
+#19 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('user/admin')
+#20 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#22 {main}
+REQUEST_URI=/user/admin
+HTTP_REFERER=http://yummyc.dev/user/profile
+---
+2012/04/04 17:12:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 17:13:59 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap-theme.widgets.BootGridView" is invalid. Make sure it points to an existing directory or file.' in /home/veronika/Sites/yummyc.dev/framework/YiiBase.php:343
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWidgetFactory.php(147): YiiBase::import('bootstrap-theme...', true)
+#1 /home/veronika/Sites/yummyc.dev/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(AdminController), 'bootstrap-theme...', Array)
+#2 /home/veronika/Sites/yummyc.dev/framework/web/CBaseController.php(173): CBaseController->createWidget('bootstrap-theme...', Array)
+#3 /home/veronika/Sites/yummyc.dev/protected/modules/user/views/admin/index.php(54): CBaseController->widget('bootstrap-theme...', Array)
+#4 /home/veronika/Sites/yummyc.dev/framework/web/CBaseController.php(127): require('/home/veronika/...')
+#5 /home/veronika/Sites/yummyc.dev/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/veronika/...', Array, true)
+#6 /home/veronika/Sites/yummyc.dev/framework/web/CController.php(870): CBaseController->renderFile('/home/veronika/...', Array, true)
+#7 /home/veronika/Sites/yummyc.dev/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /home/veronika/Sites/yummyc.dev/protected/modules/user/controllers/AdminController.php(48): CController->render('index', Array)
+#9 /home/veronika/Sites/yummyc.dev/framework/web/actions/CInlineAction.php(50): AdminController->actionAdmin()
+#10 /home/veronika/Sites/yummyc.dev/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/veronika/Sites/yummyc.dev/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /home/veronika/Sites/yummyc.dev/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/veronika/Sites/yummyc.dev/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /home/veronika/Sites/yummyc.dev/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /home/veronika/Sites/yummyc.dev/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /home/veronika/Sites/yummyc.dev/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/veronika/Sites/yummyc.dev/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(276): CController->run('')
+#19 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('user/admin')
+#20 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#22 {main}
+REQUEST_URI=/user/admin
+HTTP_REFERER=http://yummyc.dev/user/profile
+---
+2012/04/04 17:13:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 17:14:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/04 17:15:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/04 17:15:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/04 17:15:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/04 17:15:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/04/04 17:16:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/04 17:16:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/04 17:16:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/04 19:10:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/04 19:11:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/04 19:11:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/04 19:11:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/04 19:11:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/04 19:11:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/04 19:43:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/27 17:12:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/27 17:12:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/27 17:12:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/27 17:12:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/27 17:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/27 17:12:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/27 17:12:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/27 17:12:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
+2012/04/27 17:16:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /home/veronika/Sites/yummyc.dev/framework/web/CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 /home/veronika/Sites/yummyc.dev/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/veronika/Sites/yummyc.dev/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/favicon.ico
+---
