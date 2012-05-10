@@ -10,59 +10,72 @@ return array(
 	'name'=>'My Web Application',
 
 	// preloading 'log' component
-	'preload'=>array('log'),
+	'preload'=>array('log', 'bootstrap'),
 
-    'theme'=>'bootstrap',
+        'theme'=>'bootstrap',
     
 	// autoloading model and component classes
 	'import'=>array(
-		'application.models.*',
-        'application.components.*',
-        'application.modules.user.models.*',
-        'application.modules.user.components.*',
-        'ext.bootstrap-theme.widgets.*',
-        'ext.bootstrap-theme.helpers.*',
-        'ext.bootstrap-theme.behaviors.*',
+            'application.models.*',
+            'application.modules.admin.models.*',
+            'application.components.*',
+            'application.modules.user.models.*',
+            'application.modules.user.components.*',
+//            'ext.*'
+            'ext.bootstrap-theme.widgets.*',
+            'ext.bootstrap-theme.helpers.*',
+            'ext.bootstrap-theme.behaviors.*',
+//            'ext.bootstrap.*',
+//            'ext.bootstrap.widgets.*',
 	),
 
 	'modules'=>array(
-        'user' => array(
-            'tableUsers' => 'users',
-            'tableProfiles' => 'profiles',
-            'tableProfileFields' => 'profiles_fields'
-        ),
+            'admin' => array(
+                //'layoutPath' => '/layouts'
+                'layout'=>'//layouts/admin'
+            ),
+            'user' => array(
+                'tableUsers' => 'users',
+                'tableProfiles' => 'profiles',
+                'tableProfileFields' => 'profiles_fields'
+            ),
 		// uncomment the following to enable the Gii tool
 		
-		'gii'=>array(
-			'class'=>'system.gii.GiiModule',
-			'password'=>'123',
-		 	// If removed, Gii defaults to localhost only. Edit carefully to taste.
+            'gii'=>array(
+                'class'=>'system.gii.GiiModule',
+                'password'=>'123',
+                // If removed, Gii defaults to localhost only. Edit carefully to taste.
 //			'ipFilters'=>array('127.0.0.1','::1'),
-            'generatorPaths'=>array(
-                'ext.bootstrap-theme.gii',
+                'generatorPaths'=>array(
+                    'bootstrap.gii', // since 0.9.1
+                ),
             ),
-		),
 		
 	),
 
 	// application components
 	'components'=>array(
-		'user'=>array(
-			// enable cookie-based authentication
-			'allowAutoLogin'=>true,
-            'loginUrl' => array('/user/login'),
-		),
-		// uncomment the following to enable URLs in path-format
+            'bootstrap'=>array(
+                'class'=>'ext.bootstrap.components.Bootstrap', // assuming you extracted bootstrap under extensions
+            ),
+            'user'=>array(
+                // enable cookie-based authentication
+                'allowAutoLogin'=>true,
+                'loginUrl' => array('/user/login'),
+            ),
+            // uncomment the following to enable URLs in path-format
 		
-		'urlManager'=>array(
-			'urlFormat'=>'path',
-            'showScriptName'=>false,
-			'rules'=>array(
-				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
-				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-			),
-		),
+            'urlManager'=>array(
+                'urlFormat'=>'path',
+                'showScriptName'=>false,
+                'rules'=>array(
+                        'admin/categories/admin'=>'admin/categories/admin',
+                        '<module:\w+>/<controller:\w+>/<action:\w+>'=>'<module>/<controller>/<action>',
+                        '<controller:\w+>/<id:\d+>'=>'<controller>/view',
+                        '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
+                        '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+                ),
+            ),
 		
 //		'db'=>array(
 //			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
@@ -70,11 +83,12 @@ return array(
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=yummyc',
+			'connectionString' => 'mysql:host=localhost;dbname=ec',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => '802353',
+			'password' => '2069709',
 			'charset' => 'utf8',
+                        'tablePrefix' => 'ec_'
 		),
 		
 		'errorHandler'=>array(
